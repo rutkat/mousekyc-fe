@@ -1,25 +1,40 @@
-# Project Description
+# mousekyc-fe
+This is the front end interface component of the system build with react.js. It handles the user input and webcam api to accept face images for the KYC process.
+[Click here to see the project description.](https://github.com/norestlabs/mousekyc)
 
-This project is to process KYC by User token
+![Interface screenshot](https://github.com/norestlabs/mousekyc-fe/mousekyc-screenshot.png)
 
-User can upload their passport and ID card image from their local PC or taking photo using web camera so that Admin can check it
+## Installation Instructions
+***Prerequisites:*** Prior to running this repo, please ensure you have completed the back end installation and have it running. For details see [mousekyc-fe](https://github.com/norestlabs/mousekyc/mousekyc-fe)
 
-User will get KYC status from admin
+1. Clone the repo and install dependencies:
+```
+git clone https://github.com/norestlabs/mousekyc-fe.git
+npm install
+```
 
-# How to run project
-It is easy to run project
+2. Run the web interface on localhost
+```npm start
+```
+(This will ask you to accept or change the port number)
 
-First, You should install NodeJS on your local environment
 
-1. Install dependencies
+# Configuration
+### How to config .env file
 
-    * ```npm install```
+```
+    REACT_APP_NODE_PTH=src/
+    NODE_PATH=src/
+```
 
-2. Run project
-
-    * ```npm start```
+### API Endpoint
+you can change api endpoint in services/constants.js
+```
+    export const apiEndpoint = 'YOUR API ENDPOINT';
+```
 
 # Project Structure
+Core includes redux structure(redux store, redux saga)
 
 ### src
 *   assets
@@ -56,18 +71,3 @@ First, You should install NodeJS on your local environment
 *   config.js
 *   index.js
 *   registerServiceWorker.js
-
-Core includes redux structure(redux store, redux saga)
-
-# Configuration
-### How to config .env file
-
-```
-    REACT_APP_NODE_PTH=src/
-    NODE_PATH=src/
-```
-### API Endpoint
-you can change api endpoint in services/constants.js
-```
-    export const apiEndpoint = 'YOUR API ENDPOINT';
-```
