@@ -5,21 +5,23 @@ This is the front end interface component of the system build with react.js. It 
 ![Interface screenshot](https://github.com/norestlabs/mousekyc-fe/mousekyc-screenshot.png)
 
 ## Installation Instructions
-***Prerequisites:*** Prior to running this repo, please ensure you have completed the back end installation and have it running. For details see [mousekyc-fe](https://github.com/norestlabs/mousekyc/mousekyc-fe)
+***Prerequisites:*** Prior to running this repo, please ensure you have completed the back end installation and have it running. For details see [mousekyc-be](https://github.com/norestlabs/mousekyc/mousekyc-be)
 
 1. Clone the repo and install dependencies:
+
 ```
 git clone https://github.com/norestlabs/mousekyc-fe.git
 npm install
 ```
 
-2. Run the web interface on localhost
-```npm start
+2. Run the web interface on localhost. (This may ask you to change the port number)
+
 ```
-(This will ask you to accept or change the port number)
+npm start
+```
 
 
-# Configuration
+## Configuration
 ### How to config .env file
 
 ```
@@ -33,7 +35,7 @@ you can change api endpoint in services/constants.js
     export const apiEndpoint = 'YOUR API ENDPOINT';
 ```
 
-# Project Structure
+## Project Structure
 Core includes redux structure(redux store, redux saga)
 
 ### src
